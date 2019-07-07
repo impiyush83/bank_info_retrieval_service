@@ -6,5 +6,3 @@ app = create_app(Config)
 
 manager = Manager(app=app)
 manager.add_command('server', Server(threaded=True))
-
-manager.run()

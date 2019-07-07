@@ -15,7 +15,7 @@ class AccessToken(Resource):
     def get(self):
         """
 
-    .. http:get::  /access-token
+        .. http:get::  /access-token
 
         This api will be used to create profile of user
 

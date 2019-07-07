@@ -17,7 +17,7 @@ class Bank(Resource):
     def get(self, ifsc):
         """
 
-    .. http:get::  /bank/branch/<ifsc>?q=limit=25&offset=25
+        .. http:get::  /bank/branch/<ifsc>?q=limit=25&offset=25
 
         This api will be used to return bank details of the IFSC Code.
 
@@ -50,4 +50,4 @@ class Bank(Resource):
         limit = request.args.get('limit')
         offset = request.args.get('offset')
         bank_details = get_bank_details(ifsc, limit, offset)
-        return {"bank_id": bank_details.id, "bank_name": bank_details.name}, 200
+        return bank_details, 200

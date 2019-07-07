@@ -17,7 +17,7 @@ class Branch(Resource):
     def get(self, city, bank_name):
         """
 
-    .. http:get::  /bank/<city>/<bank_name>/branches?q=limit=25&offset=25
+        .. http:get::  /bank/<city>/<bank_name>/branches?q=limit=25&offset=25
 
        This api will be used to return all branches of the the bank name in specific city.
 
@@ -32,10 +32,22 @@ class Branch(Resource):
         {
             "branches": [
                 {
-                    "city"
+                    "state": "MAHARASHTRA",
+                    "city": "MUMBAI",
+                    "branch": "BAIL BAZAR",
+                    "ifsc": "ABHY0065003",
+                    "district": "GREATER MUMBAI",
+                    "address": "KMSPM'S SCHOOL, WADIA ESTATE, BAIL BAZAR-KURLA(W), MUMBAI-400070",
+                    "bank_id": 60
                 },
                 {
-
+                    "state": "MAHARASHTRA",
+                    "city": "MUMBAI",
+                    "branch": "BHANDUP",
+                    "ifsc": "ABHY0065004",
+                    "district": "GREATER MUMBAI",
+                    "address": "CHETNA APARTMENTS, J.M.ROAD, BHANDUP, MUMBAI-400078",
+                    "bank_id": 60
                 }
             ]
         }
